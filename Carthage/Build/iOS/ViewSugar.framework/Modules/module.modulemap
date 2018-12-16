@@ -1,0 +1,11 @@
+framework module ViewSugar {
+  umbrella header "ViewSugar.h"
+
+  export *
+  module * { export * }
+}
+
+module ViewSugar.Swift {
+    header "ViewSugar-Swift.h"
+    requires objc
+}

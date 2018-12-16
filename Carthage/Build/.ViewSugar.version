@@ -1,0 +1,18 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "c265a2840fc7571fffd6313b7fc39b4abe3e2686",
+  "iOS" : [
+    {
+      "name" : "ViewSugar",
+      "hash" : "41eb1d778f721721146dab6792bce0d145cca2f97b72776d9802168f66e64217"
+    }
+  ]
+}

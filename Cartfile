@@ -1,0 +1,6 @@
+github "eonist/Spatial" "master"
+github "eonist/Chaplin" "master"
+github "eonist/AnimationButton" "master"
+github "eonist/With" "master"
+github "eonist/ViewSugar" "master"
+github "eonist/ImageSugar" "master"

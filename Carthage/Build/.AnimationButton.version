@@ -1,0 +1,18 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "9453b3cfadadfd7176f4363e501ccdff9b91ed5e",
+  "iOS" : [
+    {
+      "name" : "AnimationButtonLibrary",
+      "hash" : "cd401c806e9a94459af1f7196010c3a31a43ede3484ed9caff6916617fd268b2"
+    }
+  ]
+}

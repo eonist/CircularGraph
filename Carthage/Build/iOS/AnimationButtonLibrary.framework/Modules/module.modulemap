@@ -1,0 +1,11 @@
+framework module AnimationButtonLibrary {
+  umbrella header "AnimationButtonLibrary.h"
+
+  export *
+  module * { export * }
+}
+
+module AnimationButtonLibrary.Swift {
+    header "AnimationButtonLibrary-Swift.h"
+    requires objc
+}

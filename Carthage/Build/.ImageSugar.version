@@ -1,0 +1,18 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "d9bbba0e1bf8a26323871a6154892ef71980bdbc",
+  "iOS" : [
+    {
+      "name" : "ImageSugar",
+      "hash" : "24a7fa87486efe86c0f7a4f77a9196ef9d6e88f2da5574f45726bfe3b79d371c"
+    }
+  ]
+}

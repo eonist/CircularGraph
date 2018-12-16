@@ -1,0 +1,81 @@
+BCSymbolMap Version: 2.0
+_$SSo6UIViewC9ViewSugarE2vc0D4KindxSgxmSg_tSo0A10ControllerCRbzlFZfA_
+_$SSa15reserveCapacityyySiFs5UInt8V_Tg5
+_$SSo6UIViewC9ViewSugarE5color5pointSo7UIColorCSo7CGPointV_tFTv_
+_$Ss23_ContiguousArrayStorageCys5UInt8VGML
+__swift_FORCE_LOAD_$_swiftUIKit_$_ViewSugar
+__swift_FORCE_LOAD_$_swiftFoundation_$_ViewSugar
+__swift_FORCE_LOAD_$_swiftDarwin_$_ViewSugar
+__swift_FORCE_LOAD_$_swiftObjectiveC_$_ViewSugar
+__swift_FORCE_LOAD_$_swiftCoreFoundation_$_ViewSugar
+__swift_FORCE_LOAD_$_swiftDispatch_$_ViewSugar
+__swift_FORCE_LOAD_$_swiftCoreGraphics_$_ViewSugar
+__swift_FORCE_LOAD_$_swiftCoreImage_$_ViewSugar
+__swift_FORCE_LOAD_$_swiftMetal_$_ViewSugar
+__swift_FORCE_LOAD_$_swiftQuartzCore_$_ViewSugar
+___swift_reflection_version
+Apple LLVM version 10.0.0 (clang-1000.11.45.1)
+-emit-bc /Users/eon/Documents/dev/NBA/CircularGraph/Carthage/Checkouts/ViewSugar/ViewSugar/src/UIView+Other.swift /Users/eon/Documents/dev/NBA/CircularGraph/Carthage/Checkouts/ViewSugar/ViewSugar/src/UIView+VC.swift -emit-module-path /Users/eon/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/ViewSugar/c265a2840fc7571fffd6313b7fc39b4abe3e2686/Build/Intermediates.noindex/ArchiveIntermediates/ViewSugar/IntermediateBuildFilesPath/ViewSugarExample.build/Release-iphoneos/ViewSugar.build/Objects-normal/arm64/ViewSugar.swiftmodule -emit-module-doc-path /Users/eon/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/ViewSugar/c265a2840fc7571fffd6313b7fc39b4abe3e2686/Build/Intermediates.noindex/ArchiveIntermediates/ViewSugar/IntermediateBuildFilesPath/ViewSugarExample.build/Release-iphoneos/ViewSugar.build/Objects-normal/arm64/ViewSugar.swiftdoc -serialize-diagnostics-path /Users/eon/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/ViewSugar/c265a2840fc7571fffd6313b7fc39b4abe3e2686/Build/Intermediates.noindex/ArchiveIntermediates/ViewSugar/IntermediateBuildFilesPath/ViewSugarExample.build/Release-iphoneos/ViewSugar.build/Objects-normal/arm64/ViewSugar-master.dia -emit-objc-header-path /Users/eon/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/ViewSugar/c265a2840fc7571fffd6313b7fc39b4abe3e2686/Build/Intermediates.noindex/ArchiveIntermediates/ViewSugar/IntermediateBuildFilesPath/ViewSugarExample.build/Release-iphoneos/ViewSugar.build/Objects-normal/arm64/ViewSugar-Swift.h -emit-dependencies-path /Users/eon/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/ViewSugar/c265a2840fc7571fffd6313b7fc39b4abe3e2686/Build/Intermediates.noindex/ArchiveIntermediates/ViewSugar/IntermediateBuildFilesPath/ViewSugarExample.build/Release-iphoneos/ViewSugar.build/Objects-normal/arm64/ViewSugar-master.d -target arm64-apple-ios12.1 -Xllvm -aarch64-use-tbi -enable-objc-interop -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk -I /Users/eon/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/ViewSugar/c265a2840fc7571fffd6313b7fc39b4abe3e2686/Build/Intermediates.noindex/ArchiveIntermediates/ViewSugar/BuildProductsPath/Release-iphoneos -F /Users/eon/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/ViewSugar/c265a2840fc7571fffd6313b7fc39b4abe3e2686/Build/Intermediates.noindex/ArchiveIntermediates/ViewSugar/BuildProductsPath/Release-iphoneos -g -import-underlying-module -module-cache-path /Users/eon/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/ViewSugar/c265a2840fc7571fffd6313b7fc39b4abe3e2686/ModuleCache.noindex -swift-version 4.2 -O -serialize-debugging-options -Xcc -I/Users/eon/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/ViewSugar/c265a2840fc7571fffd6313b7fc39b4abe3e2686/Build/Intermediates.noindex/ArchiveIntermediates/ViewSugar/IntermediateBuildFilesPath/ViewSugarExample.build/Release-iphoneos/ViewSugar.build/swift-overrides.hmap -Xcc -iquote -Xcc /Users/eon/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/ViewSugar/c265a2840fc7571fffd6313b7fc39b4abe3e2686/Build/Intermediates.noindex/ArchiveIntermediates/ViewSugar/IntermediateBuildFilesPath/ViewSugarExample.build/Release-iphoneos/ViewSugar.build/ViewSugar-generated-files.hmap -Xcc -I/Users/eon/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/ViewSugar/c265a2840fc7571fffd6313b7fc39b4abe3e2686/Build/Intermediates.noindex/ArchiveIntermediates/ViewSugar/IntermediateBuildFilesPath/ViewSugarExample.build/Release-iphoneos/ViewSugar.build/ViewSugar-own-target-headers.hmap -Xcc -I/Users/eon/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/ViewSugar/c265a2840fc7571fffd6313b7fc39b4abe3e2686/Build/Intermediates.noindex/ArchiveIntermediates/ViewSugar/IntermediateBuildFilesPath/ViewSugarExample.build/Release-iphoneos/ViewSugar.build/ViewSugar-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/eon/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/ViewSugar/c265a2840fc7571fffd6313b7fc39b4abe3e2686/Build/Intermediates.noindex/ArchiveIntermediates/ViewSugar/IntermediateBuildFilesPath/ViewSugarExample.build/Release-iphoneos/ViewSugar.build/all-product-headers.yaml -Xcc -iquote -Xcc /Users/eon/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/ViewSugar/c265a2840fc7571fffd6313b7fc39b4abe3e2686/Build/Intermediates.noindex/ArchiveIntermediates/ViewSugar/IntermediateBuildFilesPath/ViewSugarExample.build/Release-iphoneos/ViewSugar.build/ViewSugar-project-headers.hmap -Xcc -I/Users/eon/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/ViewSugar/c265a2840fc7571fffd6313b7fc39b4abe3e2686/Build/Intermediates.noindex/ArchiveIntermediates/ViewSugar/BuildProductsPath/Release-iphoneos/include -Xcc -I/Users/eon/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/ViewSugar/c265a2840fc7571fffd6313b7fc39b4abe3e2686/Build/Intermediates.noindex/ArchiveIntermediates/ViewSugar/IntermediateBuildFilesPath/ViewSugarExample.build/Release-iphoneos/ViewSugar.build/DerivedSources/arm64 -Xcc -I/Users/eon/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/ViewSugar/c265a2840fc7571fffd6313b7fc39b4abe3e2686/Build/Intermediates.noindex/ArchiveIntermediates/ViewSugar/IntermediateBuildFilesPath/ViewSugarExample.build/Release-iphoneos/ViewSugar.build/DerivedSources -Xcc -ivfsoverlay -Xcc /Users/eon/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/ViewSugar/c265a2840fc7571fffd6313b7fc39b4abe3e2686/Build/Intermediates.noindex/ArchiveIntermediates/ViewSugar/IntermediateBuildFilesPath/ViewSugarExample.build/Release-iphoneos/ViewSugar.build/unextended-module-overlay.yaml -Xcc -working-directory/Users/eon/Documents/dev/NBA/CircularGraph/Carthage/Checkouts/ViewSugar -module-name ViewSugar -num-threads 4 -o /Users/eon/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/ViewSugar/c265a2840fc7571fffd6313b7fc39b4abe3e2686/Build/Intermediates.noindex/ArchiveIntermediates/ViewSugar/IntermediateBuildFilesPath/ViewSugarExample.build/Release-iphoneos/ViewSugar.build/Objects-normal/arm64/UIView+Other.bc -o /Users/eon/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/ViewSugar/c265a2840fc7571fffd6313b7fc39b4abe3e2686/Build/Intermediates.noindex/ArchiveIntermediates/ViewSugar/IntermediateBuildFilesPath/ViewSugarExample.build/Release-iphoneos/ViewSugar.build/Objects-normal/arm64/UIView+VC.bc -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift
+<swift-imported-modules>
+/Users/eon/Documents/dev/NBA/CircularGraph/Carthage/Checkouts/ViewSugar
+Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)
+/Users/eon/Documents/dev/NBA/CircularGraph/Carthage/Checkouts/ViewSugar/ViewSugar/src/UIView+Other.swift
+$SSa15reserveCapacityyySiFs5UInt8V_Tg5
+<compiler-generated>
+$Ss12_ArrayBufferV8endIndexSivgs5UInt8V_Tg5
+$Ss22_ContiguousArrayBufferV18_initStorageHeader5count8capacityySi_SitFs5UInt8V_Tg5
+$Ss23_ContiguousArrayStorageCys5UInt8VGMa
+$Ss22_ContiguousArrayBufferV13_copyContents8subRange12initializingSpyxGSnySiG_AFtFs5UInt8V_Tg5
+$SSp10initialize4from5countySPyxG_SitFs5UInt8V_Tg5
+$Ss22_ContiguousArrayBufferVAByxGycfCs5UInt8V_Tg5
+$SSa9_getCountSiyFs5UInt8V_Tg5
+$Ss12_ArrayBufferV20isUniquelyReferencedSbyFs5UInt8V_Tg5
+$SSo6UIViewC9ViewSugarE2vc0D4KindxSgxmSg_tSo0A10ControllerCRbzlFZfA_
+UIView+VC.swift
+/Users/eon/Documents/dev/NBA/CircularGraph/Carthage/Checkouts/ViewSugar/ViewSugar/src
+color
+UIView+Other.swift
+subscript.get
+$SSa11_getElement_20wasNativeTypeChecked22matchingSubscriptCheckxSi_Sbs16_DependenceTokenVtFs5UInt8V_Tg5
+init
+$SSa15_checkSubscript_20wasNativeTypeCheckeds16_DependenceTokenVSi_SbtFs5UInt8V_Tg5
+$Ss12_ArrayBufferV37_checkInoutAndNativeTypeCheckedBounds_03wasfgH0ySi_SbtFs5UInt8V_Tg5
+scale.get
+_stdlib_squareRoot
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/shims/LibcShims.h
+rotation.get
+snapShot.get
+_$SSo6UIViewC9ViewSugarE2vc0D4KindxSgxmSg_tSo0A10ControllerCRbzlFZAfIcfU_TA
+_$SSo16UIViewControllerCxSgIeggo_AbCIegnr_ABRbzlTRTA
+_$Ss14LazyCollectionVySaySo16UIViewControllerCGGMa
+_$SSo16UIViewControllerCML
+_symbolic x
+_symbolic B0
+_symbolic So16UIViewControllerCxSgIeggo_
+_$Ss14LazyCollectionVySaySo16UIViewControllerCGGML
+_$SSaySo16UIViewControllerCGML
+_$SSaySo16UIViewControllerCGSayxGSlsWL
+_$Ss14LazyCollectionVySaySo16UIViewControllerCGGAByxGs0aB8ProtocolsWL
+_symbolic So16UIViewControllerC
+_symbolic So11UIResponderC
+_$SSo16UIViewControllerCMF
+/Users/eon/Documents/dev/NBA/CircularGraph/Carthage/Checkouts/ViewSugar/ViewSugar/src/UIView+VC.swift
+navigationController
+controller
+parentViewController.get
+topMostController
+$Ss14LazyCollectionVySaySo16UIViewControllerCGGMa
+$SSaySo16UIViewControllerCGSayxGSlsWl
+$SSaySo16UIViewControllerCGMa
+$SSo16UIViewControllerCMa
+$SSo16UIViewControllerCxSgIeggo_AbCIegnr_ABRbzlTRTA
+$SSo16UIViewControllerCxSgIeggo_AbCIegnr_ABRbzlTR
+objectdestroy.4
+$SSo6UIViewC9ViewSugarE2vc0D4KindxSgxmSg_tSo0A10ControllerCRbzlFZAfIcfU_TA
+$SSo6UIViewC9ViewSugarE2vc0D4KindxSgxmSg_tSo0A10ControllerCRbzlFZAfIcfU_
+objectdestroy.1
+objectdestroy
+vc
+$Ss14LazyCollectionVySaySo16UIViewControllerCGGAByxGs0aB8ProtocolsWl
+Apple LLVM version 10.0.0 (clang-1000.11.45.5)
+/Users/eon/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/ViewSugar/c265a2840fc7571fffd6313b7fc39b4abe3e2686/Build/Intermediates.noindex/ArchiveIntermediates/ViewSugar/IntermediateBuildFilesPath/ViewSugarExample.build/Release-iphoneos/ViewSugar.build/DerivedSources/ViewSugar_vers.c
