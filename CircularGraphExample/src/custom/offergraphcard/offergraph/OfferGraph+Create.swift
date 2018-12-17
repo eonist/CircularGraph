@@ -9,7 +9,8 @@ extension OfferGraph{
     * Create GraphCircle
     */
    override func createGraphGraphic() -> GraphGraphic {
-      return with(GraphGraphic.init(color:self.color)) {
+      Swift.print("OfferGraph.createGraphGraphic")
+      return with(GraphGraphic.init(color:self.color,frame:self.frame)) {
          addSubview($0)
          $0.activateAnchorAndSize { view in
             let a = Constraint.anchor(view, to: self, align: .topLeft, alignTo:  .topLeft)

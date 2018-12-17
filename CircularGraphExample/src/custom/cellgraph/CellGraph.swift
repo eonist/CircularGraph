@@ -12,6 +12,12 @@ class CellGraph:CircleGraph{
       self.availableData = availableData
       self.usedData = usedData
       super.init(frame: frame)
+   }
+   /**
+    * This serves as a sort of init for this class (AutoLayout is in charge of drawing, so we need to override this method)
+    */
+   override func layoutSubviews() {
+      super.layoutSubviews()
       _ = remainingDataLabel
       _ = remainingTextLabel
    }

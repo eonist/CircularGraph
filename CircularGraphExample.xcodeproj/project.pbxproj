@@ -26,10 +26,8 @@
 		F1C6248021C6853A0082A265 /* AnimationButtonLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F1C6247421C6853A0082A265 /* AnimationButtonLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F1C624E321C6A2330082A265 /* CircleGraph+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C624C621C6A2330082A265 /* CircleGraph+Util.swift */; };
 		F1C624E421C6A2330082A265 /* GraphGraphic+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C624C921C6A2330082A265 /* GraphGraphic+Create.swift */; };
-		F1C624E521C6A2330082A265 /* GraphGraphic+CircleUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C624CB21C6A2330082A265 /* GraphGraphic+CircleUtil.swift */; };
+		F1C624E521C6A2330082A265 /* CircleUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C624CB21C6A2330082A265 /* CircleUtil.swift */; };
 		F1C624E621C6A2330082A265 /* GraphGraphic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C624CC21C6A2330082A265 /* GraphGraphic.swift */; };
-		F1C624E721C6A2330082A265 /* GraphComponent+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C624CD21C6A2330082A265 /* GraphComponent+Create.swift */; };
-		F1C624E821C6A2330082A265 /* GraphComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C624CE21C6A2330082A265 /* GraphComponent.swift */; };
 		F1C624E921C6A2330082A265 /* CircleGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C624CF21C6A2330082A265 /* CircleGraph.swift */; };
 		F1C624EA21C6A2330082A265 /* CircleGraph+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C624D021C6A2330082A265 /* CircleGraph+Create.swift */; };
 		F1C624EB21C6A2330082A265 /* OfferGraph+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C624D421C6A2330082A265 /* OfferGraph+Create.swift */; };
@@ -42,6 +40,8 @@
 		F1C624F421C6A2330082A265 /* DetailGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C624DF21C6A2330082A265 /* DetailGraph.swift */; };
 		F1C624F521C6A2330082A265 /* CellGraph+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C624E121C6A2330082A265 /* CellGraph+Create.swift */; };
 		F1C624F621C6A2330082A265 /* CellGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C624E221C6A2330082A265 /* CellGraph.swift */; };
+		F1C624F821C76BE80082A265 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C624F721C76BE70082A265 /* ExampleView.swift */; };
+		F1C624FA21C76C5F0082A265 /* ExampleView+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C624F921C76C5F0082A265 /* ExampleView+Create.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -79,10 +79,8 @@
 		F1C6247421C6853A0082A265 /* AnimationButtonLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnimationButtonLibrary.framework; path = Carthage/Build/iOS/AnimationButtonLibrary.framework; sourceTree = "<group>"; };
 		F1C624C621C6A2330082A265 /* CircleGraph+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CircleGraph+Util.swift"; sourceTree = "<group>"; };
 		F1C624C921C6A2330082A265 /* GraphGraphic+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GraphGraphic+Create.swift"; sourceTree = "<group>"; };
-		F1C624CB21C6A2330082A265 /* GraphGraphic+CircleUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GraphGraphic+CircleUtil.swift"; sourceTree = "<group>"; };
+		F1C624CB21C6A2330082A265 /* CircleUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleUtil.swift; sourceTree = "<group>"; };
 		F1C624CC21C6A2330082A265 /* GraphGraphic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphGraphic.swift; sourceTree = "<group>"; };
-		F1C624CD21C6A2330082A265 /* GraphComponent+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GraphComponent+Create.swift"; sourceTree = "<group>"; };
-		F1C624CE21C6A2330082A265 /* GraphComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphComponent.swift; sourceTree = "<group>"; };
 		F1C624CF21C6A2330082A265 /* CircleGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleGraph.swift; sourceTree = "<group>"; };
 		F1C624D021C6A2330082A265 /* CircleGraph+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CircleGraph+Create.swift"; sourceTree = "<group>"; };
 		F1C624D421C6A2330082A265 /* OfferGraph+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OfferGraph+Create.swift"; sourceTree = "<group>"; };
@@ -95,6 +93,8 @@
 		F1C624DF21C6A2330082A265 /* DetailGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailGraph.swift; sourceTree = "<group>"; };
 		F1C624E121C6A2330082A265 /* CellGraph+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CellGraph+Create.swift"; sourceTree = "<group>"; };
 		F1C624E221C6A2330082A265 /* CellGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellGraph.swift; sourceTree = "<group>"; };
+		F1C624F721C76BE70082A265 /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
+		F1C624F921C76C5F0082A265 /* ExampleView+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExampleView+Create.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +141,8 @@
 			children = (
 				F1C6245521C64C5F0082A265 /* AppDelegate.swift */,
 				F1C6245721C64C5F0082A265 /* ViewController.swift */,
+				F1C624F721C76BE70082A265 /* ExampleView.swift */,
+				F1C624F921C76C5F0082A265 /* ExampleView+Create.swift */,
 				F1C624C421C6A2320082A265 /* src */,
 				F1C6245921C64C5F0082A265 /* Main.storyboard */,
 				F1C6245C21C64C630082A265 /* Assets.xcassets */,
@@ -162,10 +164,10 @@
 		F1C624C521C6A2330082A265 /* circlegraph */ = {
 			isa = PBXGroup;
 			children = (
-				F1C624C621C6A2330082A265 /* CircleGraph+Util.swift */,
 				F1C624C721C6A2330082A265 /* graph */,
 				F1C624CF21C6A2330082A265 /* CircleGraph.swift */,
 				F1C624D021C6A2330082A265 /* CircleGraph+Create.swift */,
+				F1C624C621C6A2330082A265 /* CircleGraph+Util.swift */,
 			);
 			path = circlegraph;
 			sourceTree = "<group>";
@@ -174,8 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				F1C624C821C6A2330082A265 /* graphgraphic */,
-				F1C624CD21C6A2330082A265 /* GraphComponent+Create.swift */,
-				F1C624CE21C6A2330082A265 /* GraphComponent.swift */,
 			);
 			path = graph;
 			sourceTree = "<group>";
@@ -193,7 +193,7 @@
 		F1C624CA21C6A2330082A265 /* util */ = {
 			isa = PBXGroup;
 			children = (
-				F1C624CB21C6A2330082A265 /* GraphGraphic+CircleUtil.swift */,
+				F1C624CB21C6A2330082A265 /* CircleUtil.swift */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -332,17 +332,17 @@
 				F1C624EE21C6A2330082A265 /* DescriptionView.swift in Sources */,
 				F1C624E921C6A2330082A265 /* CircleGraph.swift in Sources */,
 				F1C624E321C6A2330082A265 /* CircleGraph+Util.swift in Sources */,
+				F1C624F821C76BE80082A265 /* ExampleView.swift in Sources */,
 				F1C624F221C6A2330082A265 /* OfferGraphCard.swift in Sources */,
 				F1C624F621C6A2330082A265 /* CellGraph.swift in Sources */,
-				F1C624E521C6A2330082A265 /* GraphGraphic+CircleUtil.swift in Sources */,
+				F1C624E521C6A2330082A265 /* CircleUtil.swift in Sources */,
 				F1C624EA21C6A2330082A265 /* CircleGraph+Create.swift in Sources */,
 				F1C624EB21C6A2330082A265 /* OfferGraph+Create.swift in Sources */,
+				F1C624FA21C76C5F0082A265 /* ExampleView+Create.swift in Sources */,
 				F1C624EF21C6A2330082A265 /* OfferGraph.swift in Sources */,
 				F1C624ED21C6A2330082A265 /* DescriptionView+Create.swift in Sources */,
 				F1C624E621C6A2330082A265 /* GraphGraphic.swift in Sources */,
-				F1C624E821C6A2330082A265 /* GraphComponent.swift in Sources */,
 				F1C624F521C6A2330082A265 /* CellGraph+Create.swift in Sources */,
-				F1C624E721C6A2330082A265 /* GraphComponent+Create.swift in Sources */,
 				F1C6245621C64C5F0082A265 /* AppDelegate.swift in Sources */,
 				F1C624F421C6A2330082A265 /* DetailGraph.swift in Sources */,
 				F1C624E421C6A2330082A265 /* GraphGraphic+Create.swift in Sources */,

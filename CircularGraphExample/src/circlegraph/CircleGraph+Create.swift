@@ -7,10 +7,16 @@ import With
 extension CircleGraph{
    /**
     * Creates GraphGraphic (overridable)
+    * NOTE: we use the bounds because frame is not always (x:0,y:0)
     */
    @objc func createGraphGraphic() -> GraphGraphic{
-      return with(.init(frame: self.frame)){
+      Swift.print("CircleGraph.createGraphGraphic: \(self.bounds)")
+//      Swift.print("self.frame:  \(self.frame)")
+      return with(.init(frame:self.bounds)){
          addSubview($0)
+//         $0.activateSize{ view in
+//            return Constraint.size(view, to: self)
+//         }
       }
    }
 }
