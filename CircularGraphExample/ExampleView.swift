@@ -17,11 +17,11 @@ class ExampleView:UIView {
       super.init(frame: frame)
       _ = cellLabel
       _ = cellGraph
-      [cellLabel,cellGraph].activateAnchorsAndSizes { views in
+      [cellLabel,cellGraph].activateAnchors { views in
          let anchors = Constraint.distribute(vertically: views, align: .topLeft)
-         return (anchors, [])
+         return anchors
       }
-//      _ = offerGraphCard
+//      _ = offerGraphCard 👈
 //      _ = detailGraph
       self.backgroundColor = .lightGray
    }
