@@ -4,11 +4,11 @@ import Spatial
  * DescriptionView
  */
 class DescriptionView:UIView{
-   let data: OfferGraphCard.Data
+   let data: OfferSheet.Data
    lazy var destinationLabel:UILabel = createDestinationLabel()
    lazy var subscriptionTypeLabel:UILabel = createSubscriptionTypeLabel()
    lazy var priceLabel:UILabel = createPriceLabel()
-   init(data:OfferGraphCard.Data) {
+   init(data:OfferSheet.Data) {
       self.data = data
       super.init(frame: .zero)
       _ = destinationLabel

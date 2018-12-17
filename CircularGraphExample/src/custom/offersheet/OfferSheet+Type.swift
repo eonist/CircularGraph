@@ -3,7 +3,7 @@ import Spatial
 /**
  * Type
  */
-extension OfferGraphCard {
+extension OfferSheet {
    typealias Data = (subscriptionType:String,price:String,type:OfferType)
    enum OfferType {
       case from,to

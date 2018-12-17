@@ -7,10 +7,11 @@ class CircleGraph:UIView{
    lazy var graphGraphic:GraphGraphic = createGraphGraphic()
    /**
     * This serves as a sort of init for this class (AutoLayout is in charge of drawing, so we need to override this method)
+    * IMPORTANT: ⚠️️ Using this method is only relevant if you need to have access to .frame in the viewStack
     */
    override func layoutSubviews() {
       super.layoutSubviews()
-      Swift.print("CircleGraph.bounds:  \(bounds)")
+//      Swift.print("CircleGraph.bounds:  \(bounds)")
       _ = graphGraphic
       //self.backgroundColor = .orange /*Debug*/
       //self.layer.borderColor = UIColor.orange.cgColor /*Debug*/

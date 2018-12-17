@@ -24,9 +24,9 @@ extension ExampleView {
    /**
     * FromOfferGraph
     */
-   func createOfferGraphCard() -> OfferGraphCard{//TODO: ⚠️️ Do
-      let data:OfferGraphCard.Data = (subscriptionType:"Smart 3GB",price:"299",type:.from)
-      let graph = OfferGraphCard(data:data)
+   func createOfferGraphCard() -> OfferSheet{//TODO: ⚠️️ Do
+      let data:OfferSheet.Data = (subscriptionType:"Smart 3GB",price:"299",type:.from)
+      let graph = OfferSheet(data:data)
       addSubview(graph)
       graph.activateSize { view in
          return Constraint.size(view, size: .init(width:150,height:200))
@@ -36,8 +36,8 @@ extension ExampleView {
    /**
     * DetailGraph
     */
-   func createDetailGraph() -> DetailGraph{
-      return DetailGraph.init()
+   func createDetailGraph() -> DetailSheet{
+      return DetailSheet.init()
    }
    /**
     * Creates UILabel

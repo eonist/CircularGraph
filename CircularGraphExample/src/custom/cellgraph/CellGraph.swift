@@ -15,6 +15,7 @@ class CellGraph:CircleGraph{
    }
    /**
     * This serves as a sort of init for this class (AutoLayout is in charge of drawing, so we need to override this method)
+    * IMPORTANT: we use this method because to calculate the inscribedSquare we need access to the frame
     */
    override func layoutSubviews() {
       super.layoutSubviews()

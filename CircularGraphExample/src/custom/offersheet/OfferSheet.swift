@@ -3,7 +3,7 @@ import Spatial
 /**
  * TODO: ⚠️️ Make these classes inside EXTENSIONS
  */
-class OfferGraphCard:UIView{//Rename to OfferSheet
+class OfferSheet:UIView{//Rename to OfferSheet
    lazy var graph:OfferGraph = createOfferGraph()//rename to offerGraph
    lazy var descriptionText:DescriptionView = createDescriptionText()
    let data:Data
