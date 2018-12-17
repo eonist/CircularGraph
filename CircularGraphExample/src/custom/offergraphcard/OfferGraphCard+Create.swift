@@ -9,9 +9,11 @@ extension OfferGraphCard{
     * Create CircleGraph
     */
    func createOfferGraph() -> OfferGraph {
+      Swift.print("createOfferGraph: frame: \(self.frame)")
       let graphColor:UIColor = self.data.type == .from ? .orange : .green
-      return with(.init(color:graphColor)){
+      return with(.init(color:graphColor,frame:self.frame )){
          addSubview($0)
+         $0.backgroundColor = .white
          $0.activateAnchorAndSize { view in
             let a = Constraint.anchor(view, to: self, align: .bottomLeft, alignTo:  .bottomLeft)
             let s = (Constraint.width(view, to: self), Constraint.length(view, to: view, viewAxis: .vertical, toAxis: .horizontal))

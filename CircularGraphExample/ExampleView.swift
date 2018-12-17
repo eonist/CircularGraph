@@ -11,18 +11,24 @@ class ExampleView:UIView {
    //TODO: ⚠️️ make the correct percentage wise calulation of graph progress etc?
    lazy var cellLabel = createUILabel(text: "Cell graph:")
    lazy var cellGraph = createCellGraph()
+   lazy var offerLabel = createUILabel(text: "Offer graph:")
    lazy var offerGraphCard = createOfferGraphCard()
+   lazy var detailLabel = createUILabel(text: "Detail graph:")
    lazy var detailGraph = createDetailGraph()
+   /**/
    override init(frame: CGRect) {
       super.init(frame: frame)
       _ = cellLabel
       _ = cellGraph
-      [cellLabel,cellGraph].activateAnchors { views in
+      _ = offerLabel
+      _ = offerGraphCard
+      _ = detailLabel
+      //      _ = detailGraph
+      [cellLabel,cellGraph,offerLabel,offerGraphCard,detailLabel].activateAnchors { views in
          let anchors = Constraint.distribute(vertically: views, align: .topLeft)
          return anchors
       }
-//      _ = offerGraphCard 👈
-//      _ = detailGraph
+
       self.backgroundColor = .lightGray
    }
    /**

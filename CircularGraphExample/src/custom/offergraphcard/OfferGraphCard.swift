@@ -10,8 +10,9 @@ class OfferGraphCard:UIView{//Rename to OfferSheet
    init(data:Data, frame: CGRect = .zero) {
       self.data = data
       super.init(frame: frame)
-      _ = graph
       _ = descriptionText
+      _ = graph
+      self.backgroundColor = .white
    }
    required init?(coder aDecoder: NSCoder) {
       fatalError("init(coder:) has not been implemented")
