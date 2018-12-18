@@ -8,6 +8,7 @@ class DetailGraph:CircleGraph {
 //   lazy var rollOverCircle:UIView = createRollOverCircle()
    
    lazy var remainingDataLabel:UILabel = createRemainingDataLabel()
+//   lazy var remainingDataTextField:UITextField = createRemainingDataText()
    lazy var remainingTextLabel:UILabel = createRemainingTextLabel()
    lazy var downArrow:UIView = createDownArrow()
 //   lazy var dataLabel:UILabel = createDataLabel()
@@ -26,6 +27,7 @@ class DetailGraph:CircleGraph {
     */
    override func layoutSubviews() {
       super.layoutSubviews()
+//      _ = remainingDataTextField
       _ = remainingDataLabel
       _ = remainingTextLabel
       _ = downArrow

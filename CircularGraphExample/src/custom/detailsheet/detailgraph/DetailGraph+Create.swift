@@ -10,41 +10,53 @@ extension DetailGraph{
    /**
     * RemainingDataLabel
     */
-   func createRemainingDataLabel() -> VerticalAlignedLabel{
+   func createRemainingDataLabel() -> UILabel{
       return with(.init()){
          $0.backgroundColor = .yellow
-         $0.text = "12.3 GB"
-         $0.font = UIFont.boldSystemFont(ofSize: 32)
+         let text:String = "12.3 GB"
+         $0.text = text
+         $0.font = UIFont.boldSystemFont(ofSize: 32.0)
          $0.textColor = .black
          $0.textAlignment = .center
-         $0.contentMode = .bottom
+//         $0.sizeToFit()
+         
+       
+//         $0.contentInset = UIEdgeInsetsMake(-4,-8,0,0)
+//         textContainer.lineFragmentPadding = 0
+//         $0.contentMode = .bottom
          addSubview($0)
-         let circleRadius = frame.height/2
-         let inscribedSquare = CircleGraph.squareInCircle(circleCenter: .init(x: circleRadius, y: circleRadius), radius: circleRadius)
-         $0.activateAnchorAndSize { view in
-            let a = Constraint.anchor(view, to: self, align: .topLeft, alignTo: .topLeft, offset:inscribedSquare.origin)
-            let s = Constraint.size(view, size: inscribedSquare.size,multiplier:CGSize(width:1,height:0.5))//(view, to: self, offset: .zero, multiplier: CGPoint.init(x: 1, y: 0.5))
-            return (a,s)
+//         let circleRadius = frame.height/2
+//         let inscribedSquare = CircleGraph.squareInCircle(circleCenter: .init(x: circleRadius, y: circleRadius), radius: circleRadius)
+//         let textHeight:CGFloat = text.size(withAttributes:[.font: UIFont.boldSystemFont(ofSize:42)]).height - 12
+         $0.activateAnchor { view in
+            return Constraint.anchor(view, to: self, align: .bottomCenter, alignTo: .centerCenter)//, offset:inscribedSquare.origin
          }
+//         $0.activateAnchorAndSize { view in
+//            let a = Constraint.anchor(view, to: self, align: .bottomCenter, alignTo: .centerCenter)//, offset:inscribedSquare.origin
+//            let s = Constraint.size(view, size:.init(width:inscribedSquare.width,height:textHeight))//(view, to: self, offset: .zero, multiplier: CGPoint.init(x: 1, y: 0.5))
+//            return (a,s)
+//         }
       }
    }
    /**
     * Create RemainingTextLabel
     */
-   func createRemainingTextLabel() -> VerticalAlignedLabel{
+   func createRemainingTextLabel() -> UILabel{
       return with(.init()) {
          $0.backgroundColor = .orange
          $0.text = "Gjenstår"
          $0.font = .systemFont(ofSize: 14)
          $0.textColor = .black//.cyan
          $0.textAlignment = .center
-         $0.contentMode = .top
+//         $0.contentMode = .top
          addSubview($0)
          /*Constraints*/
-         $0.activateAnchorAndSize { view in
-            let a = Constraint.anchor(view, to: remainingDataLabel, align: .topCenter, alignTo: .bottomCenter)
-            let s = Constraint.size(view, to: remainingDataLabel)
-            return (a,s)
+         
+         $0.activateAnchor { view in
+            //(view, to: self, align: .topCenter, alignTo: .bottomCenter)
+            return Constraint.anchor(view, to: self, align: .topCenter, alignTo: .centerCenter)
+//            let s = Constraint.size(view, to: remainingDataLabel)
+//            return (a,s)
          }
       }
    }
@@ -58,8 +70,9 @@ extension DetailGraph{
          $0.image = img
 //         $0.backgroundColor = .darkGray
          $0.activateAnchorAndSize { view in
-            let a = Constraint.anchor(view, to: self.remainingTextLabel, align: .centerCenter, alignTo: .centerCenter)
-            let s = Constraint.size(view, size: .init(width:24,height:24))
+//            let a = Constraint.anchor(view, to: self.remainingTextLabel, align: .centerCenter, alignTo: .centerCenter)
+            let a = Constraint.anchor(view, to: self, align: .centerCenter, alignTo: .centerCenter, offset:CGPoint(x:0,y:frame.height/4))
+            let s = Constraint.size(view, size: .init(width:32,height:32))
             return (a,s)
          }
       }
@@ -95,3 +108,5 @@ extension DetailGraph{
    //      return .init()
    //   }
 }
+
+
