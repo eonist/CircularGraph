@@ -26,18 +26,27 @@ extension ExampleView {
     */
    func createOfferGraphCard() -> OfferSheet{//TODO: ⚠️️ Do
       let data:OfferSheet.Data = (subscriptionType:"Smart 3GB",price:"299",type:.from)
-      let graph = OfferSheet(data:data)
-      addSubview(graph)
-      graph.activateSize { view in
-         return Constraint.size(view, size: .init(width:150,height:200))
+      return with(.init(data:data)) {
+         addSubview($0)
+         $0.activateSize { view in
+            return Constraint.size(view, size: .init(width:100,height:150))
+         }
       }
-      return graph
+//      let graph = OfferSheet
+//      return graph
    }
    /**
     * DetailGraph
     */
    func createDetailGraph() -> DetailSheet{
-      return DetailSheet.init()
+      return with(.init()){
+         addSubview($0)
+         $0.activateConstraint{ view in
+            let w = Constraint.width(view, to: self, multiplier: 1)
+            let h = Constraint.length(view, to: view, viewAxis: .horizontal, toAxis: .vertical)
+            return [w,h]
+         }
+      }
    }
    /**
     * Creates UILabel
@@ -45,9 +54,10 @@ extension ExampleView {
    func createUILabel(text:String) -> UILabel{
       return with(.init()){
          $0.text = text
+         $0.font = .systemFont(ofSize: 14)
          addSubview($0)
          $0.activateSize { view in
-            return Constraint.size(view, to: self, height: 48)
+            return Constraint.size(view, to: self, height: 24)
          }
       }
    }

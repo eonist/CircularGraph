@@ -2,17 +2,22 @@ import UIKit
 import With
 import Spatial
 
+//get the height of the text with font etc
+//use the height for the label
+//make better alignments that way
+
 extension DetailGraph{
    /**
     * RemainingDataLabel
     */
-   func createRemainingDataLabel() -> UILabel{
+   func createRemainingDataLabel() -> VerticalAlignedLabel{
       return with(.init()){
-         //$0.backgroundColor = .yellow
+         $0.backgroundColor = .yellow
          $0.text = "12.3 GB"
-         $0.font = .systemFont(ofSize: 12)
+         $0.font = UIFont.boldSystemFont(ofSize: 32)
          $0.textColor = .black
          $0.textAlignment = .center
+         $0.contentMode = .bottom
          addSubview($0)
          let circleRadius = frame.height/2
          let inscribedSquare = CircleGraph.squareInCircle(circleCenter: .init(x: circleRadius, y: circleRadius), radius: circleRadius)
@@ -26,12 +31,14 @@ extension DetailGraph{
    /**
     * Create RemainingTextLabel
     */
-   func createRemainingTextLabel() -> UILabel{
+   func createRemainingTextLabel() -> VerticalAlignedLabel{
       return with(.init()) {
+         $0.backgroundColor = .orange
          $0.text = "Gjenstår"
-         $0.font = .systemFont(ofSize: 10)
+         $0.font = .systemFont(ofSize: 14)
          $0.textColor = .black//.cyan
          $0.textAlignment = .center
+         $0.contentMode = .top
          addSubview($0)
          /*Constraints*/
          $0.activateAnchorAndSize { view in
@@ -42,11 +49,20 @@ extension DetailGraph{
       }
    }
    /**
-    *
+    * Create the down arrow graphic
     */
-   func createDownButton() -> UIView{
-      let downArrow:UIView = .init()
-      return downArrow
+   func createDownArrow() -> UIImageView{
+      return with( .init(frame:.zero)) {//init(origin:.zero,size:.init(width:40,height:40)))
+         addSubview($0)
+         let img = UIImage.init(named: "downBtn")//?.resize(to: .init(width: 24, height: 24))
+         $0.image = img
+//         $0.backgroundColor = .darkGray
+         $0.activateAnchorAndSize { view in
+            let a = Constraint.anchor(view, to: self.remainingTextLabel, align: .centerCenter, alignTo: .centerCenter)
+            let s = Constraint.size(view, size: .init(width:24,height:24))
+            return (a,s)
+         }
+      }
    }
    /**
     * Create graphContentLabel

@@ -18,13 +18,14 @@ class ExampleView:UIView {
    /**/
    override init(frame: CGRect) {
       super.init(frame: frame)
-      _ = cellLabel
-      _ = cellGraph
-      _ = offerLabel
-      _ = offerGraphCard
-      _ = detailLabel
-      //      _ = detailGraph
-      [cellLabel,cellGraph,offerLabel,offerGraphCard,detailLabel].activateAnchors { views in
+//      _ = cellLabel
+//      _ = cellGraph
+//      _ = offerLabel
+//      _ = offerGraphCard
+//      _ = detailLabel
+      _ = detailGraph
+      
+      [/*cellLabel,cellGraph,offerLabel,offerGraphCard,detailLabel,*/detailGraph].activateAnchors { views in
          let anchors = Constraint.distribute(vertically: views, align: .topLeft)
          return anchors
       }

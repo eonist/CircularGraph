@@ -45,6 +45,7 @@
 		F1C6250221C7A2580082A265 /* DetailGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C6250121C7A2580082A265 /* DetailGraph.swift */; };
 		F1C6250421C7A81A0082A265 /* DetailGraph+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C6250321C7A81A0082A265 /* DetailGraph+Create.swift */; };
 		F1C6250621C7A8EF0082A265 /* DetailSheet+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C6250521C7A8EF0082A265 /* DetailSheet+Create.swift */; };
+		F1C6250A21C8E2370082A265 /* VerticalAlignedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C6250921C8E2370082A265 /* VerticalAlignedLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -101,6 +102,7 @@
 		F1C6250121C7A2580082A265 /* DetailGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGraph.swift; sourceTree = "<group>"; };
 		F1C6250321C7A81A0082A265 /* DetailGraph+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailGraph+Create.swift"; sourceTree = "<group>"; };
 		F1C6250521C7A8EF0082A265 /* DetailSheet+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailSheet+Create.swift"; sourceTree = "<group>"; };
+		F1C6250921C8E2370082A265 /* VerticalAlignedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalAlignedLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,8 +149,7 @@
 			children = (
 				F1C6245521C64C5F0082A265 /* AppDelegate.swift */,
 				F1C6245721C64C5F0082A265 /* ViewController.swift */,
-				F1C624F721C76BE70082A265 /* ExampleView.swift */,
-				F1C624F921C76C5F0082A265 /* ExampleView+Create.swift */,
+				F1C6250721C8BDEF0082A265 /* exampleview */,
 				F1C624C421C6A2320082A265 /* src */,
 				F1C6245921C64C5F0082A265 /* Main.storyboard */,
 				F1C6245C21C64C630082A265 /* Assets.xcassets */,
@@ -161,6 +162,7 @@
 		F1C624C421C6A2320082A265 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				F1C6250821C8E2130082A265 /* common */,
 				F1C624C521C6A2330082A265 /* circlegraph */,
 				F1C624D121C6A2330082A265 /* custom */,
 			);
@@ -272,6 +274,23 @@
 			path = detailgraph;
 			sourceTree = "<group>";
 		};
+		F1C6250721C8BDEF0082A265 /* exampleview */ = {
+			isa = PBXGroup;
+			children = (
+				F1C624F721C76BE70082A265 /* ExampleView.swift */,
+				F1C624F921C76C5F0082A265 /* ExampleView+Create.swift */,
+			);
+			path = exampleview;
+			sourceTree = "<group>";
+		};
+		F1C6250821C8E2130082A265 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				F1C6250921C8E2370082A265 /* VerticalAlignedLabel.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -347,6 +366,7 @@
 				F1C6245821C64C5F0082A265 /* ViewController.swift in Sources */,
 				F1C624F321C6A2330082A265 /* OfferSheet+Create.swift in Sources */,
 				F1C6250621C7A8EF0082A265 /* DetailSheet+Create.swift in Sources */,
+				F1C6250A21C8E2370082A265 /* VerticalAlignedLabel.swift in Sources */,
 				F1C624EE21C6A2330082A265 /* DescriptionView.swift in Sources */,
 				F1C624E921C6A2330082A265 /* CircleGraph.swift in Sources */,
 				F1C624E321C6A2330082A265 /* CircleGraph+Util.swift in Sources */,
