@@ -6,14 +6,18 @@ import UIKit
  * let view = CircleGraph.init(frame: self.frame)
  * addSubview(view)
  */
-class CircleGraph:UIView{//TODO: ⚠️️ rename to Graph
-   lazy var bgCircle:CAShapeLayer = createGraph(style: style.back, progress: 1)//createBackgroundGraphic()
-   lazy var fgCircle:CAShapeLayer = createGraph(style: style.front, progress: 0)//createForgroundGraphic()
-   let style:CircleGraph.Style
-//   static let defaultStyle:CircleGraph.Style = (front:CircleGraph.defaultStyle.front,back:(Colors.lightGray,6 ))
+class Graph:UIView,GraphKind{
+   lazy var background:CAShapeLayer = createGraph(style: style.back, progress: 1)//createBackgroundGraphic()
+   lazy var forground:CAShapeLayer = createGraph(style: style.front, progress: 0)//createForgroundGraphic()
+   let style:Graph.Style
+   var currentProgress:CGFloat = 0
+//   public var destinationProgress:CGFloat
+   var onLayout:()->Void = {Swift.print("nothing added to onLayoutClosure")}
+//   var progress:Progress = (0,0)
    /*Init*/
-   init(style:Style = CircleGraph.defaultStyle) {
+   init(style:Style = Graph.defaultStyle/*,destinationProgress:CGFloat = 0.75*/) {
       self.style = style
+//      self.destinationProgress = destinationProgress
       super.init(frame: .zero)
    }
    /**
@@ -22,9 +26,10 @@ class CircleGraph:UIView{//TODO: ⚠️️ rename to Graph
     */
    override func layoutSubviews() {
       super.layoutSubviews()
-      _ = bgCircle
-      _ = fgCircle
-      intro()
+      _ = background
+      _ = forground
+      onLayout()
+//      intro()
       //Swift.print("CircleGraph.bounds:  \(bounds)")
       //self.backgroundColor = .orange /*Debug*/
       //self.layer.borderColor = UIColor.orange.cgColor /*Debug*/
@@ -37,3 +42,4 @@ class CircleGraph:UIView{//TODO: ⚠️️ rename to Graph
       fatalError("init(coder:) has not been implemented")
    }
 }
+//   static let defaultStyle:CircleGraph.Style = (front:CircleGraph.defaultStyle.front,back:(Colors.lightGray,6 ))

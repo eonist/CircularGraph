@@ -2,7 +2,7 @@ import UIKit
 /**
  * SimpleCircGraph only shows one arc
  */
-class CellGraph:CircleGraph{
+class CellGraph:Graph{
    lazy var remainingDataLabel:UILabel = createRemainingDataLabel()
    lazy var remainingTextLabel:UILabel = createRemainingTextLabel()
    /*Data*/

@@ -23,6 +23,10 @@ class DetailSheet:UIView {
       }
       // let xAnchors = views.enumerated().map{Constraint.anchor($0.1, to: self, align: .centerX, alignTo: .centerX)}
    }
+//   override func layoutSubviews() {
+//      super.layoutSubviews()
+//      
+//   }
    /**
     * Boilerplate
     */

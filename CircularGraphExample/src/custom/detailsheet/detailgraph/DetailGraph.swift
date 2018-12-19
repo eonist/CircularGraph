@@ -2,7 +2,7 @@ import UIKit
 import With
 import Spatial
 
-class DetailGraph:CircleGraph {
+class DetailGraph:Graph {
 //   lazy var backgroundCircle:UIView = createBackgroundCircle()
 //   lazy var dataLeftCircle:UIView = createDataLeftCircle()
 //   lazy var rollOverCircle:UIView = createRollOverCircle()

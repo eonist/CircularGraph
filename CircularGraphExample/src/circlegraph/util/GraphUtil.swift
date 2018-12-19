@@ -3,7 +3,7 @@ import UIKit
 /**
  * CircleUtil
  */
-class CircleUtil{
+class GraphUtil{
    typealias Style = (fillColor:UIColor, strokeColor:UIColor, strokeWidth:CGFloat)
    typealias Circle = (center:CGPoint, radius:CGFloat)
    /**
@@ -18,5 +18,15 @@ class CircleUtil{
       layer.lineWidth = style.strokeWidth
       layer.lineCap = .round
       layer.strokeEnd = progress/*Sets progress of the stroke between predefined start and predefined end*/
+   }
+   /**
+    * Returns a square that fits inside a circle
+    * PARAM: circleCenter - center of circle
+    * PARAM: radius - radius of circle
+    */
+   static func squareInCircle(circleCenter:CGPoint, radius:CGFloat) -> CGRect{
+      let side = sqrt(radius * radius * 2) /*calc side length of square*/
+      let half = side * 0.5/* position offset*/
+      return .init(x: circleCenter.x - half, y: circleCenter.y - half, width: side, height: side)
    }
 }

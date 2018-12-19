@@ -12,9 +12,9 @@ class ExampleView:UIView {
    lazy var cellLabel = createUILabel(text: "Cell graph:")
    lazy var cellGraph = createCellGraph()
    lazy var offerLabel = createUILabel(text: "Offer graph:")
-   lazy var offerGraphCard = createOfferGraphCard()
+   lazy var offerGraphCard = createOfferSheet()
    lazy var detailLabel = createUILabel(text: "Detail graph:")
-   lazy var detailGraph = createDetailGraph()
+   lazy var detailSheet = createDetailSheet()
    /**/
    override init(frame: CGRect) {
       super.init(frame: frame)
@@ -23,9 +23,9 @@ class ExampleView:UIView {
 //      _ = offerLabel
       _ = offerGraphCard
 //      _ = detailLabel
-      _ = detailGraph
+      _ = detailSheet
       
-      [/*cellLabel*/cellGraph,/*offerLabel,*/offerGraphCard/*,detailLabel*/,detailGraph].activateAnchors { views in
+      [/*cellLabel*/cellGraph,/*offerLabel,*/offerGraphCard/*,detailLabel*/,detailSheet].activateAnchors { views in
          let anchors = Constraint.distribute(vertically: views, align: .topLeft)
          return anchors
       }

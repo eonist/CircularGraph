@@ -19,12 +19,14 @@ extension ExampleView {
             return Constraint.size(view, size: .init(width:side,height:side))
             //return (a,s)
          }
+         let graph = $0
+         graph.intro()
       }
    }
    /**
     * FromOfferGraph
     */
-   func createOfferGraphCard() -> OfferSheet{//TODO: ⚠️️ Do
+   func createOfferSheet() -> OfferSheet{//TODO: ⚠️️ Do
       let data:OfferSheet.Data = (subscriptionType:"Smart 3GB",price:"299",type:.from)
       return with(.init(data:data)) {
          addSubview($0)
@@ -38,7 +40,7 @@ extension ExampleView {
    /**
     * DetailGraph
     */
-   func createDetailGraph() -> DetailSheet{
+   func createDetailSheet() -> DetailSheet{
       return with(.init()){
          addSubview($0)
          $0.activateConstraint{ view in
@@ -47,6 +49,7 @@ extension ExampleView {
             return [w,h]
          }
       }
+      
    }
    /**
     * Creates UILabel

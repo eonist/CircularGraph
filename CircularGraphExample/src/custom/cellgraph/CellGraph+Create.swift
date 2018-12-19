@@ -15,7 +15,7 @@ extension CellGraph {
          $0.textAlignment = .center
          addSubview($0)
          let circleRadius = frame.height/2
-         let inscribedSquare = CircleGraph.squareInCircle(circleCenter: .init(x: circleRadius, y: circleRadius), radius: circleRadius)
+         let inscribedSquare = GraphUtil.squareInCircle(circleCenter: .init(x: circleRadius, y: circleRadius), radius: circleRadius)
          $0.activateAnchorAndSize { view in
             let a = Constraint.anchor(view, to: self, align: .topLeft, alignTo: .topLeft, offset:inscribedSquare.origin)
             let s = Constraint.size(view, size: inscribedSquare.size,multiplier:CGSize(width:1,height:0.5))//(view, to: self, offset: .zero, multiplier: CGPoint.init(x: 1, y: 0.5))

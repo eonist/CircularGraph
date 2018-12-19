@@ -12,6 +12,7 @@ class OfferSheet:UIView{//Rename to OfferSheet
       super.init(frame: frame)
       _ = descriptionText
       _ = graph
+      graph.onLayout = {self.graph.intro()}
       self.backgroundColor = .white
    }
    required init?(coder aDecoder: NSCoder) {
