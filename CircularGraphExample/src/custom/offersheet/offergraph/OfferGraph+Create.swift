@@ -8,18 +8,18 @@ extension OfferGraph{
    /**
     * Create GraphCircle
     */
-   override func createGraphGraphic() -> GraphGraphic {
-//      Swift.print("OfferGraph.createGraphGraphic: \(self.frame)")
-      let style:GraphGraphic.Style = (back:(Colors.lightGray,6), front:(self.color,6))
-      return with(GraphGraphic.init(style:style,frame:self.bounds)) {
-         addSubview($0)
-         $0.activateAnchorAndSize { view in
-            let a = Constraint.anchor(view, to: self, align: .topLeft, alignTo:  .topLeft)
-            let s = Constraint.size(view, to: self)
-            return (a,s)
-         }
-      }
-   }
+//   override func createGraphGraphic() -> GraphGraphic {
+////      Swift.print("OfferGraph.createGraphGraphic: \(self.frame)")
+//      let style:GraphGraphic.Style = (back:(Colors.lightGray,6), front:(self.color,6))
+//      return with(GraphGraphic.init(style:style,frame:self.bounds)) {
+//         addSubview($0)
+//         $0.activateAnchorAndSize { view in
+//            let a = Constraint.anchor(view, to: self, align: .topLeft, alignTo:  .topLeft)
+//            let s = Constraint.size(view, to: self)
+//            return (a,s)
+//         }
+//      }
+//   }
    /**
     * Create graphContentLabel
     */

@@ -11,7 +11,7 @@ class CellGraph:CircleGraph{
    init(availableData: Double, usedData: Double, frame: CGRect) {
       self.availableData = availableData
       self.usedData = usedData
-      super.init(frame: frame)
+      super.init()
    }
    /**
     * This serves as a sort of init for this class (AutoLayout is in charge of drawing, so we need to override this method)

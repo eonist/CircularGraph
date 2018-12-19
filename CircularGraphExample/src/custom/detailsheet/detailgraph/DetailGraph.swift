@@ -13,14 +13,14 @@ class DetailGraph:CircleGraph {
    lazy var downArrow:UIView = createDownArrow()
 //   lazy var dataLabel:UILabel = createDataLabel()
 //   lazy var descriptionLabel:UILabel = createDescriptionLabel()
-   override init(frame:CGRect) {
-      super.init(frame: frame)
+//   override init(frame:CGRect) {
+//      super.init(frame: frame)
 //      _ = backgroundCircle
 //      _ = dataLeftCircle
 //      _ = rollOverCircle
 //      self.backgroundColor = .blue /*Debug*/
 //      _ = graphContentLabel
-   }
+//   }
    /**
     * This serves as a sort of init for this class (AutoLayout is in charge of drawing, so we need to override this method)
     * IMPORTANT: ⚠️️ We use this method because to calculate the inscribedSquare we need access to the frame
@@ -32,7 +32,7 @@ class DetailGraph:CircleGraph {
       _ = remainingTextLabel
       _ = downArrow
    }
-   required init?(coder aDecoder: NSCoder) {
-      fatalError("init(coder:) has not been implemented")
-   }
+//   required init?(coder aDecoder: NSCoder) {
+//      fatalError("init(coder:) has not been implemented")
+//   }
 }
