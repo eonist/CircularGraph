@@ -14,7 +14,7 @@ class DetailSheet:UIView {
     */
    override init(frame: CGRect) {
       super.init(frame: frame)
-      self.backgroundColor = .green
+//      self.backgroundColor = .green/*Debug*/
       _ = detailGraph
       _ = periodLabel
       _ = addDataButton

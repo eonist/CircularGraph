@@ -10,7 +10,8 @@ extension OfferGraph{
     */
    override func createGraphGraphic() -> GraphGraphic {
 //      Swift.print("OfferGraph.createGraphGraphic: \(self.frame)")
-      return with(GraphGraphic.init(color:self.color,frame:self.bounds)) {
+      let style:GraphGraphic.Style = (back:(Colors.lightGray,6), front:(self.color,6))
+      return with(GraphGraphic.init(style:style,frame:self.bounds)) {
          addSubview($0)
          $0.activateAnchorAndSize { view in
             let a = Constraint.anchor(view, to: self, align: .topLeft, alignTo:  .topLeft)
@@ -24,7 +25,7 @@ extension OfferGraph{
     */
    func createGraphContentLabel() -> UILabel{
       return with(.init()) {
-         $0.textColor = UIColor.black
+         $0.textColor = .black
          $0.textAlignment = .center
          $0.text = "3 GB"
          $0.font = UIFont.boldSystemFont(ofSize: 28)

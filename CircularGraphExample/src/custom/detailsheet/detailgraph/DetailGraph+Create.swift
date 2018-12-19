@@ -2,10 +2,6 @@ import UIKit
 import With
 import Spatial
 
-//get the height of the text with font etc
-//use the height for the label
-//make better alignments that way
-
 extension DetailGraph{
    /**
     * RemainingDataLabel

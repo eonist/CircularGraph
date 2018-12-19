@@ -14,7 +14,7 @@ extension GraphGraphic {
          with(CAShapeLayer()) { circleLayer in
             let circleCenter:CGPoint = .init(x: frame.width/2, y: frame.height/2)
             let radius = frame.height/2
-            CircleUtil.drawCircle(with: circleLayer, circle:(circleCenter,radius), style:(.clear,.lightGray,3), progress: 1)
+            CircleUtil.drawCircle(with: circleLayer, circle:(circleCenter,radius), style:(.clear,self.style.back.color,self.style.back.strokeWidth), progress: 1)
             bgView.layer.addSublayer(circleLayer)
          }
       }
@@ -29,13 +29,14 @@ extension GraphGraphic {
          let radius = frame.height/2
          let circleLayer = with(CAShapeLayer())  { circleLayer in
             fgCircle.layer.addSublayer(circleLayer)
-            CircleUtil.drawCircle(with: circleLayer, circle:(circleCenter,radius), style:(.clear,.green,3), progress: 0)
+            CircleUtil.drawCircle(with: circleLayer, circle:(circleCenter,radius), style:(.clear,.green,6), progress: 0)
          }
          /*Animation*/
          let animator = TimeAnimator(duration:0.3)
          animator.tick = {
             let progress:CGFloat = TimeAnimator.interpolate(from: 0, to: 0.75, fraction: animator.progress)
-            CircleUtil.drawCircle(with: circleLayer, circle:(circleCenter,radius), style:(.clear,self.color,3), progress: progress)
+            
+            CircleUtil.drawCircle(with: circleLayer, circle:(circleCenter,radius), style:(.clear,self.style.front.color,self.style.front.strokeWidth), progress: progress)
          }
          animator.start()
       }

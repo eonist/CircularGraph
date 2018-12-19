@@ -10,10 +10,10 @@ extension DetailSheet{
     * Creates the detailGraph
     */
    func createDetailGraph() -> DetailGraph{
-      return with(.init()) {
+      return with(DetailGraph.init()) {
          addSubview($0)
          $0.activateSize { view in
-            let w = Constraint.width(view, to: self, multiplier: 0.7)
+            let w = Constraint.width(view, to: self, multiplier: 0.6)
             let h = Constraint.length(view, to: view, viewAxis: .horizontal, toAxis: .vertical)
             return (w,h)
          }

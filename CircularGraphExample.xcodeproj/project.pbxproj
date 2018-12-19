@@ -45,6 +45,7 @@
 		F1C6250221C7A2580082A265 /* DetailGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C6250121C7A2580082A265 /* DetailGraph.swift */; };
 		F1C6250421C7A81A0082A265 /* DetailGraph+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C6250321C7A81A0082A265 /* DetailGraph+Create.swift */; };
 		F1C6250621C7A8EF0082A265 /* DetailSheet+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C6250521C7A8EF0082A265 /* DetailSheet+Create.swift */; };
+		F1C6250D21CA10380082A265 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C6250C21CA10380082A265 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -101,6 +102,7 @@
 		F1C6250121C7A2580082A265 /* DetailGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGraph.swift; sourceTree = "<group>"; };
 		F1C6250321C7A81A0082A265 /* DetailGraph+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailGraph+Create.swift"; sourceTree = "<group>"; };
 		F1C6250521C7A8EF0082A265 /* DetailSheet+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailSheet+Create.swift"; sourceTree = "<group>"; };
+		F1C6250C21CA10380082A265 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,7 +162,7 @@
 		F1C624C421C6A2320082A265 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				F1C6250821C8E2130082A265 /* common */,
+				F1C6250B21CA10170082A265 /* common */,
 				F1C624C521C6A2330082A265 /* circlegraph */,
 				F1C624D121C6A2330082A265 /* custom */,
 			);
@@ -189,9 +191,9 @@
 		F1C624C821C6A2330082A265 /* graphgraphic */ = {
 			isa = PBXGroup;
 			children = (
+				F1C624CC21C6A2330082A265 /* GraphGraphic.swift */,
 				F1C624C921C6A2330082A265 /* GraphGraphic+Create.swift */,
 				F1C624CA21C6A2330082A265 /* util */,
-				F1C624CC21C6A2330082A265 /* GraphGraphic.swift */,
 			);
 			path = graphgraphic;
 			sourceTree = "<group>";
@@ -281,9 +283,10 @@
 			path = exampleview;
 			sourceTree = "<group>";
 		};
-		F1C6250821C8E2130082A265 /* common */ = {
+		F1C6250B21CA10170082A265 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				F1C6250C21CA10380082A265 /* Constant.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				F1C624F621C6A2330082A265 /* CellGraph.swift in Sources */,
 				F1C624E521C6A2330082A265 /* CircleUtil.swift in Sources */,
 				F1C624EA21C6A2330082A265 /* CircleGraph+Create.swift in Sources */,
+				F1C6250D21CA10380082A265 /* Constant.swift in Sources */,
 				F1C624EB21C6A2330082A265 /* OfferGraph+Create.swift in Sources */,
 				F1C624FA21C76C5F0082A265 /* ExampleView+Create.swift in Sources */,
 				F1C624EF21C6A2330082A265 /* OfferGraph.swift in Sources */,

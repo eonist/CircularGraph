@@ -12,7 +12,8 @@ extension CircleGraph{
    @objc func createGraphGraphic() -> GraphGraphic{
       Swift.print("CircleGraph.createGraphGraphic: \(self.bounds)")
 //      Swift.print("self.frame:  \(self.frame)")
-      return with(.init(frame:self.bounds)){
+      
+      return with(.init(style:GraphGraphic.defaultStyle,frame:self.bounds)){
          addSubview($0)
 //         $0.activateSize{ view in
 //            return Constraint.size(view, to: self)

@@ -4,6 +4,7 @@ import UIKit
  * Style: forground-arc-color,background-arc-color,stroke-thickness,rounded-edge
  */
 class CircleGraph:UIView{
+//   private let graphStyle:GraphGraphic.Style
    lazy var graphGraphic:GraphGraphic = createGraphGraphic()
    /**
     * This serves as a sort of init for this class (AutoLayout is in charge of drawing, so we need to override this method)

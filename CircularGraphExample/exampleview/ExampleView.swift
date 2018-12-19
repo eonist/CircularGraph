@@ -21,16 +21,16 @@ class ExampleView:UIView {
 //      _ = cellLabel
 //      _ = cellGraph
 //      _ = offerLabel
-//      _ = offerGraphCard
+      _ = offerGraphCard
 //      _ = detailLabel
       _ = detailGraph
       
-      [/*cellLabel,cellGraph,offerLabel,offerGraphCard,detailLabel,*/detailGraph].activateAnchors { views in
+      [/*cellLabel,cellGraph,offerLabel,*/offerGraphCard/*,detailLabel*/,detailGraph].activateAnchors { views in
          let anchors = Constraint.distribute(vertically: views, align: .topLeft)
          return anchors
       }
 
-      self.backgroundColor = .lightGray
+      self.backgroundColor = .white//.lightGray
    }
    /**
     * Boilerplate

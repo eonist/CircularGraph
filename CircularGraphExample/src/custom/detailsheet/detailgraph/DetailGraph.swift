@@ -18,7 +18,7 @@ class DetailGraph:CircleGraph {
 //      _ = backgroundCircle
 //      _ = dataLeftCircle
 //      _ = rollOverCircle
-      self.backgroundColor = .blue /*Debug*/
+//      self.backgroundColor = .blue /*Debug*/
 //      _ = graphContentLabel
    }
    /**
